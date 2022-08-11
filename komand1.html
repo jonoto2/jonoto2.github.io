@@ -1,4 +1,9 @@
 
+<head>
+    <link rel="stylesheet" href="prism.css">
+    <script src="prism.js"></script>
+</head>
+
 <style>
     :root {
         font-family: sans-serif;
@@ -62,12 +67,33 @@ button:hover {
 <br><a class="button" href="https://replit.com">Переход на replit.com</a>
 <br><br>
 <p>После того как мы зарегистрировались на реплите нам нужно создать файл с языком Python. Когда вы создали пишем в самом начале:</p>
-<img src="images/IMG_20220804_235721.jpg">
+
+<pre><code class="language-python">local CHS = game:GetService('ChangeHistoryService')
+CHS:SetWaypoint('Convert Before')
+
+import discord
+from discord.ext import commands
+
+CHS:SetWaypoint('Convert After')</code></pre>
+
 <p>Дальше будем писать префикс нашего бота</p>
 <p>бот будет определять на что он будет отвечать и кому </p>
-<img src="images/IMG_20220804_235750.jpg">
+<pre><code class="language-python">local CHS = game:GetService('ChangeHistoryService')
+CHS:SetWaypoint('Convert Before')
+
+client = commands.Bot(command_prefix="!")
+CHS:SetWaypoint('Convert After')</code></pre>
+
 <p>Дальше будем писать саму команду и ответ на нее́=</p>
-<img src="images/IMG_20220804_235818.jpg">
+<pre><code class="language-python">local CHS = game:GetService('ChangeHistoryService')
+CHS:SetWaypoint('Convert Before')
+
+@client.command()
+async def welll(ctx):
+  await ctx.send("send")
+
+CHS:SetWaypoint('Convert After')</code></pre>
+
 <p>дальше нам нужно зайти на сайт develope portal discord когда мы туда вошли видем синию кнопку new application когда нажали у нас будет name это ник нашего бота придумываем все сами</p>
 <p>когда придумали и создали нажимаем в верхнем левом углу на три полоски и нажимаем на bot  </p>
 <br><a class="button1" href="https://discord.com/developers/applications">Переход на developer portal</a>
