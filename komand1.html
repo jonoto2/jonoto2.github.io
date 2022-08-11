@@ -69,27 +69,21 @@ button:hover {
 <p>После того как мы зарегистрировались на реплите нам нужно создать файл с языком Python. Когда вы создали пишем в самом начале:</p>
 
 <pre><code class="language-python">
-
-
 import discord
 from discord.ext import commands
-
 </code></pre>
 
 <p>Дальше будем писать префикс нашего бота</p>
 <p>бот будет определять на что он будет отвечать и кому </p>
 <pre><code class="language-python">
-
 client = commands.Bot(command_prefix="!")
 </code></pre>
 
 <p>Дальше будем писать саму команду и ответ на нее́=</p>
 <pre><code class="language-python">
-
 @client.command()
 async def welll(ctx):
   await ctx.send("send")
-
 </code></pre>
 
 <p>дальше нам нужно зайти на сайт develope portal discord когда мы туда вошли видем синию кнопку new application когда нажали у нас будет name это ник нашего бота придумываем все сами</p>
