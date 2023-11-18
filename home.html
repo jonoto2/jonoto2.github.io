@@ -17,43 +17,53 @@
         width: 500px;
     }
 
+.button{
+  position: relative;
+  background-color: black;
+  border-radius: 4em;
+  font-size: 16px;
+  color: white;
+  padding: 0.8em 1.8em;
+  cursor:pointer;
+  user-select:none;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s; /* Safari */
+}
 
-.button {
-        border: none;
-        color: #fff;
-        background: rgb(0 200 255);
-        padding: 15px;
-        border-radius: 25px;
-        box-shadow: 0px 5px 15px 5px #00000070;
-        transition: 0.2s;
-        text-decoration: none;
-    }
+.button:hover {
+  transition-duration: 0.1s;
+  background-color: #3A3A3A;
+}
 
-button:hover {
-        transform: scale(0.95);
-        box-shadow: 0px 0px 15px 0px #00000070;
-    }
+.button:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 4em;
+  left: 0;
+  top:0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  box-shadow: 0 0 10px 40px white;
+}
 
+.button:active:after {
+  box-shadow: 0 0 0 0 white;
+  position: absolute;
+  border-radius: 4em;
+  left: 0;
+  top:0;
+  opacity: 1;
+  transition: 0s;
+}
 
-.button1 {
-        border: none;
-        color: #fff;
-        background: rgb(202 6 20);
-        padding: 15px;
-        border-radius: 25px;
-        box-shadow: 0px 5px 15px 5px #00000070;
-        transition: 0.2s;
-        text-decoration: none;
-    }
-
-button1:hover {
-        transform: scale(0.95);
-        box-shadow: 0px 0px 15px 0px #00000070;
-    }
-.button1:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+.button:active {
+  top: 1px;
 }
 
 .button2 {
